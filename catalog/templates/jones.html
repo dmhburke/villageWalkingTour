@@ -1,0 +1,73 @@
+{% extends "baseTemplate.html" %}
+
+{% block content1 %}
+{% load static %}
+<div id=overallContainer class=standardShadow>
+  <div class=contentHeader id=jonesContentHeader>
+    <div class="contentNumber boldText brownText brownBorder">7</div>
+    <div class="contentTitle whiteText villageHeader">Jones Street</div>
+  </div>
+  <div class=textBlock>
+
+    Jones Street is perhaps the best place to visit to understand Dylan's transition from Village newcomer to the artist that would ultimately come to define this place for future generations.
+    <br><br><div class="brownText boldText headerPadding">His first apartment</div>
+    After stints in the Washington Square Park Hotel upon arrival and then bouncing around various couches for months afterwards, Dylan found his first apartment on the third floor of 161 West Fourth Street, which he and his girlfriend, Suze Rotolo, moved into in December 1961 - nearly one year after his arrival.
+
+    <div class=imgBlock id="dylanRotolo2IMG"></div>
+
+    The couple paid just $60 a month in rent (about $500 in 2019 dollars).
+
+    <div class=imgBlock id="dylanRotoloIMG"></div>
+
+    Though it's often described as their apartment, in truth Dylan actually lived here alone for the majority of his time here. After six months of living together, Rotolo agreed to her mother's proposal that she travel to Italy to study art, and she was away for several months, returning in January 1963.
+
+    <br><br>Rotolo's period in Italy has been credited with providing Dylan much of the emotional depth that exists in his early recordings, especially 'Freewheelin', for which she was away for the majority of the writing and recording. Dylan missed her terribly, and wrote long letters to her asking her to come back. Critics have connected the intense love songs expressing longing and loss on Freewheelin' to Dylan's period of distant relationship with Rotolo.
+
+    <br><br>Though they split up long ago, Rotolo actually went to live most her life in this neighborhood, living only a couple blocks east of this apartment building until shortly before she died of lung cancer in 2011.
+
+    <br><br><div class="brownText boldText headerPadding">The Freewheelin' Bob Dylan</div>
+    What undoubtedly gives this place its cultural significance is the fact that it was while living here that Dylan released 'The Freewheelin Bob Dylan' through Columbia Records, on May 27, 1963. This was the record that launched him into the national consciousness, as well as introduced the world to his prolific songwriting talents.
+
+    <br><br>And it is on this spot, just around the corner from his apartment, that the iconic cover image for the album is taken.
+    <br><br>The cover was the result of a photo shoot with Dylan and a CBS photographer, intending to capture Dylan on his own. At the end of the session, the photographer took several candid shots of Rotolo and Dylan together, and the recording executives ended up prefering this one of the two of them walking down Jones Street over any of the ones of Dylan on his own.
+
+    <div class=imgBlock id="freewheelinIMG"></div>
+    Though we take for granted the brilliance of this album today, in reality it almost didn't happen. His initial album, the self-titled Bob Dylan, sold just 5,000 copies, barely breaking even. His representative within Columbia records, John Hammond, was under enormous pressure to drop his contract, but resisted, defending Dylan vigorously and insisting that the second record be released.
+
+    <br><br>Whereas his first album had contained only two original songs, Freewheelin' had eleven of its thirteen songs come from Dylan's original compositions and contained an astonishing number of songs that would come to be regarded as among Dylan's iconic contributions to this era: "Blowin in the Wind", "Girl from the North Country", "Masters of War", "A Hard Rain's a-Gonna Fall" and "Don't Think Twice, It's All Right".
+
+    <div class=audioPlayer>
+    <iframe src="https://open.spotify.com/embed/track/2WOjLF83vqjit2Zh4B69V3" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+
+    While Dylan had an undoubted talent for lyricism, his artistic success also drew heavily on the unique set of environmental factors that contributed to his prolific output. The first was the extraordinary environment that existed the Greenwich Village that we've just retraced in the early 60s, where Dylan was able to surround himself with a constant stream of outstanding poetry, music, and writing talent.
+
+    <br><br>Another influence was his relationship with Rotolo, and their living together in that West Village apartment. Rotolo's family had strong left-wing political commitments; both of her parents were members of the American Communist Party. Dylan acknowledged her influence when he told an interviewer: "Suze was into this equality-freedom thing long before I was. I checked out the songs with her."
+
+    <div class=imgBlock id="dylanBedfordIMG"></div>
+
+    The speed and ease with which Dylan wrote topical songs was undeniable and was often remarked upon by other musicians in the New York folk scene.
+    <br><br>In a radio interview on WBAI in June 1962, Pete Seeger described Dylan as "the most prolific songwriter on the scene" and then asked Dylan how many songs he had written recently. Dylan replied, "I might go for two weeks without writing these songs. I write a lot of stuff. In fact, I wrote five songs last night but I gave all the papers away in some place called the Bitter End."
+
+    <br><br>Following on from the public interest that Freewheelin' attracted, Dylan often reflected on the importance of the environment in which he lived in, and his willingness to borrow from the influences of other artists, his friends, and the culture he was immersed in, often saying that the songs were not something to which he could lay claim to having wholly created. In an interview with Sing Out! magazine, Dylan said:
+
+    <div class=quoteBlock id="">
+    "The songs are there. They exist all by themselves just waiting for someone to write them down. I just put them down on paper. If I didn't do it, somebody else would."
+    </div>
+    This was the truth of Dylan and Greenwich Village, which was the combination of someone with an immense talent for putting into words and music the spirit of the world around him, together with a time and place almost unmatched in the 20th century for cultivating a community that was together exploring and re-evaluating society through artistic expression.
+    <br><br>Fortunately for him, and for us, these two elements came together at the right time here in this spot to produce a body of work that continues to inspire, inform, and be reinterpreted by countless present and future generations.
+    <div class=imgBlock id="dylanEndIMG"></div>
+
+
+
+  </div>
+
+  <a href="{% url 'agenda' %}">
+  <div class="backButtonContainer">
+    <div class="backButton brownBorder">
+      <img id=backButtonIcon src="{% static 'icons/backBrown.svg' %}">
+    </div>
+  </div></a>
+</div>
+
+
+{% endblock %}

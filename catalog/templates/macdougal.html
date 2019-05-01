@@ -1,0 +1,69 @@
+{% extends "baseTemplate.html" %}
+
+{% block content1 %}
+{% load static %}
+<div id=overallContainer class=standardShadow>
+  <div class=contentHeader id=macdougalContentHeader>
+    <div class="contentNumber boldText brownText brownBorder">5</div>
+    <div class="contentTitle whiteText villageHeader">MacDougal Street</div>
+  </div>
+  <div class=textBlock>
+    There is no street more synonymous with Bob Dylan than MacDougall Street.
+    <br><br>This is where Dylan was able to completely immerse himself in the hotbed of poets, writers, musicians, and activists that ultimately defined his work.
+    <br><br>Though much has changed in the last 60 years, we can still trace the remnants of the three most important venues that shaped Bob Dylan.
+
+    <br><br><div class="brownText boldText headerPadding">The Folklore Center</div>
+    This bookstore and music shop, owned by a popular figure in the world of folk music named Izzy Young, became the center of the folk music scene in Greenwich Village. Young (who we saw pictured in the protest images in Washington Square Park) was also the person who booked Dylan’s first large-venue concert in New York City at the Carnegie Chapter Hall for November 4th, 1961.
+    <div class=imgBlock id="dylanSeatIMG"></div>
+    A young Bob Dylan used to sit in the back of The Folklore Center and listen to the records the store had, which is also how he met Dave Van Ronk, the man who helped him introduce himself to the Greenwich Village music scene.
+
+    <br><br>Von Ronk (pictured in the header above), nicknamed the 'Mayor of Macdougal Street', for his authoritative knowledge of jazz and blues, became a mentor to Dylan almost immediately upon his arrival, often letting Dylan stay in his apartment in the area while he was still looking for a place of his own.
+
+    <br><br>The importance of the Folklore Center to Dylan is evidenced in a song as a tribute to the store and Young called “Talking Folklore Center”.
+    <br><br><div class="brownText boldText headerPadding">The Fat Black Pussycat</div>
+    This cafe opened in 1958 as The Commons and was a big part of the beatnick, bongos, espresso culture that thrived in the Village back then.
+    <br><br>A visitor walking in would find poetry readings, folk music and jazz, along with a languid, Bohemian ambiance. The Pussycat name was adopted in 1962 just after Dylan arrived in Greenwich Village.
+
+    <div class=imgBlock id="fbpExtIMG"></div>
+
+    The Pussycat is particularly notable because it is the site where Bob Dylan is supposed to have written Blowin in the Wind (debuted at Folk City), which he claims to have written in 10 minutes by putting words over an adapted version of the old slave song "No More Auction Block" that we heard earlier.
+
+    <br><br>The origins of Blowin in the Wind has a fascinating story in several parts.
+    <br><br>First, at Dylan's first performance of it at Folk City he was said to introduce it by saying: "This here ain't no protest song or anything like that, 'cause I don't write no protest songs'. Of course, despite this specific disclaimer, it's gone on to become one of the most famous songs associated with the protest age.
+
+    <div class=imgBlock id="ppmMarchIMG"></div>
+
+    Second, the Dylan version of the song was never actually a hit. It was actually the cover of it by Peter, Paul & Mary (another fixture of the Greenwich Village scene) in 1963 that made it to #2 on the US charts and introduced most people to the song, and to Bob Dylan, who was still a relatively obscure folk singer at the time.
+    <br><br>In fact, it was Peter, Paul & Mary who played it at the March on Washington in 1963, rocketing it to prominence, despite the fact that Bob Dylan also played at that same event on the same day!
+
+    <div class=audioPlayer>
+    <iframe src="https://open.spotify.com/embed/track/62Yu8QL1g9pdbvN4XL9Rah" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+
+    And third, as the song became popular, Newsweek published a rumour circulating that Dylan had actually stolen the song from a NJ high school student who went to school near the Gleason household in NJ, and who worked at the hospital where Woody Guthrie was being treated for Huntington's disease, both places that Dylan spent a great deal of time.
+    <br><br>Apart from this circumstantial evidence the rumor also gathered steam because Dylan only published the song three weeks after he recorded it, which was unusual for artists at the time. The student in question was known for singing to the patients at the hospital, and so the theory went that Dylan heard the song, recorded it, and then published it when he found out it wasn't published. The rumour has since been denied by the student.
+
+    <br><br><div class="brownText boldText headerPadding">The Gaslight Cafe</div>
+    Perhaps the most important venue on MacDougall Street during Dylan's time, however, was the Gaslight Cafe, whose legend comes from the fact that Dylan considered this cafe superior to any other in the neighbourhood, writing that The Gaslight “had a dominant presence on the street, more prestige than anyplace else”.
+
+    <div class=imgBlock id="gasExtIMG"></div>
+
+    The Gaslight began as a 'basket house', in which performers would play for a share of proceeds from a basket passed around during their performance. It started primarily for beat poets like Allen Ginsberg, but slowly transitioned into a folk club in 1960 as folk music became more popular, and just as Dylan moved to the Village. At its peak in the early 60s, its cultural importance rivaled that of the much larger Folk City.
+
+    <div class=imgBlock id="gasIntIMG"></div>
+
+    The Gaslight had several quirks unusual for a music venue today: it never served alcohol, and its underground ventilation was provided by airshafts that emptied into the apartments above. This meant that when people would applaud, the noise would travel directly to the people living above. The police were called so many times that applause was banned, which started the trend of people snapping their fingers instead, to show support for performers.
+
+    <div class=imgBlock id="gasPersIMG"></div>
+
+  </div>
+
+  <a href="{% url 'agenda' %}">
+  <div class="backButtonContainer">
+    <div class="backButton brownBorder">
+      <img id=backButtonIcon src="{% static 'icons/backBrown.svg' %}">
+    </div>
+  </div></a>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,75 @@
+{% extends "baseTemplate.html" %}
+
+{% block content1 %}
+{% load static %}
+<div id=overallContainer class=standardShadow>
+  <div class=contentHeader id=bleeckerContentHeader>
+    <div class="contentNumber boldText brownText brownBorder">4</div>
+    <div class="contentTitle whiteText villageHeader">Bleecker Street</div>
+  </div>
+  <div class=textBlock>
+    Bleecker Street is home to several places that had a strong influence on Bob Dylan when he first moved to New York City.
+
+    <br><br><div class="brownText boldText headerPadding">Dylan and his influences</div>
+
+    Bob Dylan has famously said: his songs “didn’t get here by themselves.”
+    <br><br>The influences that have informed Dylan’s work are legion. Early on, Country and Western music. Later, the rock ’n’ roll of Chuck Berry and Little Richard. In his teens, he discovered folk musicians like Odetta, and became enamored of Woody Guthrie, even imitating Guthrie’s Oklahoma twang.
+    <br><br>When he arrived on the Greenwich Village folk scene in New York in January 1961, he diligently absorbed the folk and traditional influences that were available to him — from fellow performers, from books like Alan Lomax’s “Folk Songs of North America,” and from records. And not only other music inspired him — poetry, literature and film have all made their way into his work.
+
+    As the New York Times wrote just after Dylan received the Nobel Prize for Literature in 2016:
+    <div class=quoteBlock id="">
+    The true genius of Dylan is how effectively he was "able to internalize these disparate influences, and to transform them, with great courage and sensitivity, into a sound that was uniquely, unmistakably his own. Indeed, to create new poetic expressions within the great American song tradition."
+    </div>
+    The density of artistic talent that was attracted to Greenwich Village in the 1960s was the ideal place for someone with Dylan's particular talent. It was a community in which artists didn't just play for audiences, they played for each other, and they spent their spare time together.
+    <div class=imgBlock id="rotoloIMG"></div>
+    This cross-pollination is apparent in much of Dylan's work, and we've compiled some examples of influences that Dylan has borrowed from, to form some of his most famous songs. This will be the sound track as we retrace the steps that Dylan would have taken in those years.
+
+    <br><br><div class="brownText boldText headerPadding">Song comparisons</div>
+    <b>Blowin' in the Wind</b> is loosely based on the African-American gospel song "No More Auction Block", which was commonly sung by a regular performer at Gerde's, Delores Dixon.
+    <div class=audioPlayer>
+    <iframe src="https://open.spotify.com/embed/track/18GiV1BaXzPVYpp9rmOg0E" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+    Dylan took fragments from the spiritual, but fashioned completely new lyrics and added his own chorus.
+    <div class=audioPlayer>
+    <iframe src="https://open.spotify.com/embed/track/3OsswttedCWOTTIHzIqSK3" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+    <b>Song to Woody</b> is an homage to Woody Guthrie on Dylan's debut album that is a great early example of his willingness to directly adapt others' melodies.
+    <div class=audioPlayer>
+    <iframe src="https://open.spotify.com/embed/track/0dfdXhBg11XA16XgAEtFcN" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+    Borrowing heavily from Woody Guthrie's own '1913 Massacre', which was released in 1941.
+    <div class=audioPlayer>
+    <iframe src="https://open.spotify.com/embed/track/0Ms4kWSNyfpFqfsXfju9dJ" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+
+    <div class="brownText boldText headerPadding">The Bitter End</div>
+    The Bitter End, which opened the year Dylan arrived in New York, and bills itself as the oldest continuously operating rock club in New York.
+    <div class=imgBlock id="dylanBitterEndIMG"></div>
+    The Bitter End was a regular Dylan hangout, where he used to not only play, but also spent a lot of time off stage, playing pool, and watching other musicians perform.
+
+    <br><br>In those days, The Bitter End was famous for its Tuesday night folk music "hootenannies", which is an Appelachian colloquialism for something without a name (i.e. a 'thingamajig'), and which was appropriated by country and folk music to refer to an open mic concert and which different performers are welcome to get up and play. Joan Baez once explained to Time Magazine that a hootenanny is to folk music, what a jam session is to jazz.
+
+    <br><br>Upon Dylan's return to Greenwich Village in the early 70s after a prolonged period in Woodstock New York, Dylan returned to the Bitter End and it became the birthplace of Bob Dylan's Rolling Thunder Revue, an ensemble concert tour put together by Dylan in the mid-70s featuring singers like Joan Baez, Patti Smith, and Joni Mitchell. Martin Scorcese is releasing a documentary of the tour on Netflix this year.
+
+    <br><br>But back in 1962, the Bitter End was particularly convenient because it was right across from one of his first houses in the area!
+    <div class=imgBlock id="youngDylanIMG"></div>
+    Bob Dylan actually lived here in 1962, with his friend Chip Monck, who rented the basement of a music club called the Village Theater.
+    <br><br>The Village Theater was itself a very notable music venue, one at which Dylan spent a great deal of time. Some notable people that performed during its early days were Nina Simone, John Coltrane and Aretha Franklin, who made her first ever New York appearance there.
+
+    <br><br>This spot is also notable because it is where Dylan wrote "A Hard Rain's Gonna Fall" while living here.
+
+    <br><br><b>A Hard Rain's Gonna Fall</b> is another example of Dylan's talent for absorbing a range of different styles.
+    <div class=audioPlayer>
+    <iframe src="https://open.spotify.com/embed/track/7ny2ATvjtKszCpLpfsGnVQ" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+    In this case you can hear the way he's adopted the staccato emphases of his "And it's-a-hard" chorus from the same rhythms of Texas bluesman Mance Lipscomb's 1960 release, 'Ain't it Hard'
+    <div class=audioPlayer>
+    <iframe src="https://open.spotify.com/embed/track/6JPieDRi8HjZTN1rprlC8W" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+
+
+  </div>
+  <a href="{% url 'agenda' %}">
+  <div class="backButtonContainer">
+    <div class="backButton brownBorder">
+      <img id=backButtonIcon src="{% static 'icons/backBrown.svg' %}">
+    </div>
+  </div></a>
+</div>
+
+
+{% endblock %}

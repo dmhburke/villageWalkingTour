@@ -1,0 +1,57 @@
+{% extends "baseTemplate.html" %}
+
+{% block content1 %}
+{% load static %}
+<div id=overallContainer class=standardShadow>
+  <div class=contentHeader id=gerdesContentHeader>
+    <div class="contentNumber boldText brownText brownBorder">3</div>
+    <div class="contentTitle whiteText villageHeader">Gerde's Folk City</div>
+  </div>
+  <div class=textBlock>
+  Gerde's Folk City was a restaurant-turned-music venue in Greenwich Village, which became one of the world's most influential music sites.
+  <br><br><div class="brownText boldText headerPadding">Top 3 global music venue</div>
+  Folk City was instrumental in launching the careers of several renowned music stars including Simon & Garfunkel, Jimi Hendrix, Peter, Paul & Mary, Emmy Lou Harris (who also waitressed at the club) and of course, Bob Dylan.
+  <div class=imgBlock style="height: 250px" id="playbillIMG"></div>
+  Indeed, Rolling Stone Magazine called Folk City one of the three most important music venues in the world, along with CBGB's and The Cavern in Liverpool (The Beatles' early venue).
+  <br><br><div class="brownText boldText headerPadding">Dylan and Folk City</div>
+  But of course, few artists are as closely connected to Folk City as Bob Dylan.
+  <br><br>It is hard to overstate the significace of Folk City to Dylan's life. It was here that he played his first professional gig on April 11, 1961. It was here that Bob Dylan's reputation was made when his September 29 concert was reviewed by the New York Times' Robert Shelton, who said of Dylan:
+
+  <div class=quoteBlock id="">
+    "Among the newer promising talents deserving mention are a 20-year-old latter-day Guthrie disciple named Bob Dylan, with a curiously arresting mumbling, country-steeped manner." This positive reception helped him secure his first recording contract with CBS."</div>
+  Folk City was also where Bob Dylan played "Blowin' in the Wind" for the first time.
+  <div class=audioPlayer>
+  <iframe src="https://open.spotify.com/embed/track/18GiV1BaXzPVYpp9rmOg0E" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+  </div>
+  It was also here that Dylan met Joan Baez for the first time - a singer and activist whose personal and professional relationship with him, as well as her interpretations of Dylan's songs in the early 1960s helped to propel him into the national consciousness that he would end up redefining.
+  <div class=imgBlock id="bazeIMG"></div>
+  It was a 60s version of A Star is Born:
+
+  by 1963, Baez had already released three albums, two of which had been certified gold, and she invited Dylan on stage to perform alongside her at the Newport Folk Festival. The two performed the Dylan composition "With God on Our Side", a performance that set the stage for many more duets like it in the months and years to come. Typically while on tour, Baez would invite Dylan to sing on stage partly by himself and partly with her, much to the chagrin of her fans.
+
+  <br><br><div class="brownText boldText headerPadding">Dylan and a fortunate start</div>
+  The story of how Bob Dylan got his start at Folk City is illustrative of the musical community that existed in Greenwich Village at the time, described by the widow of folk star, Logan English, in her biography:
+
+  <div class=quoteBlock id="">"My husband and I met Bob Dylan at Bob and Sidsel Gleason's house ... One night we were all sitting around and Woody [Guthrie] said something like, "Play something" to this kid sitting on the couch. The kid was Bob Dylan, and he sang and it was just beautiful. So Logan said, "I'm working at Gerde's. I'm the MC. We'll get you to play there." So that Monday night, Bob came in and did his first set."</div>
+
+  <div class=imgBlock id="dylanCouchIMG"></div>
+  The Gleasons are actually also a central part of an important Dylan controversy!
+  <br><br>As part of her description of the time, Sid Gleason once casually mentioned that Dylan took a job for a short time, working as a laborer for the Department of Sanitation removing snow from the city's streets.
+  <br><br>Sid Gleason says she's certain Dylan worked at this whenever he could, and others say they remember Bob talking about a job like this.
+  But this idea is too much for most of his fans; the idea of one of the most important counter-cultural icons in history ever worked a practical, mundane job is blasphemy. When asked about the story, one close friend of Dylan exclaimed,
+  <div class=quoteBlock id="">"Are you out of your mind? No-one who ever called himself a folk singer would take a straight job, and especially not Dylan. That would have been undignified. It would have been socially unacceptable."</div>
+  Folk City represents the start of our Dylan section of the tour, we'll venture back through Greenwich Village, visiting the sites where Dylan and his community of artists would not only play, but spend time together, and end up creating a new sound that defined a generation.
+
+  </div>
+
+  <a href="{% url 'agenda' %}">
+  <div class="backButtonContainer">
+    <div class="backButton brownBorder">
+      <img id=backButtonIcon src="{% static 'icons/backBrown.svg' %}">
+    </div>
+  </div></a>
+
+</div>
+
+
+{% endblock %}

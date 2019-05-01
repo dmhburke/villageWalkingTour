@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>
+{% block browserTitle %}
+
+{% endblock %}
+</title>
+
+
+<link rel="icon"
+      type="image/png"
+      href="">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/styles.css' %}">
+<link rel="icon"
+    type="image/png"
+    href="{% static '' %}">
+
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Wendy+One" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div id=screenContainer>
+    <div id=mobileContainer>
+      <div id=mainHeader>
+        <div id=ldHeaderText class=cursiveHeader>Lisa and Dan's</div>
+        <div id=villageHeaderText class=villageHeader>Greenwich Village Walking Tour</div>
+      </div>
+
+      <div id=templateContent>
+
+        {% block content1 %}
+
+        {% endblock %}
+
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

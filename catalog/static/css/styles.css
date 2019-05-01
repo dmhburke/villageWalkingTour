@@ -1,0 +1,869 @@
+* {
+  font-family: verdana;
+  font-size: 14px;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.twentyPxDiv {
+  height: 30px;
+}
+
+.standardShadow {
+  box-shadow: 2px 1px 5px 2px grey;
+}
+
+.villageHeader {
+  font-family: 'Wendy One', sans-serif;
+  font-size: 1.6rem;
+  color: white;
+}
+
+.whiteText {
+  color: white
+}
+
+.brownText {
+  color: #714214;
+}
+
+.brownBorder {
+  border: 2px solid #714214;
+}
+
+.boldText {
+  font-weight: bold;
+}
+
+.sixtiesBrown {
+  background-color: #714214;
+}
+
+.lightgrey {
+  background-color: #F2F2F2;
+}
+
+.cursiveHeader {
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.6rem;
+  color: white;
+}
+
+.headerPadding {
+  padding-bottom: 10px;
+}
+
+#screenContainer {
+  height: 100vh;
+  width: 100vw;
+  min-width: 150px;
+}
+
+#mobileContainer {
+  width: 375px;
+  min-height: 700px;
+  border: 1px solid #F2F2F2;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+
+#mainHeader {
+  height: 135px;
+  width: 100%;
+  background-color: lightgrey;
+  margin: 0px;
+  position: relative;
+  background-image:
+  linear-gradient(170deg,
+      rgba(150, 75, 0, 0.1),
+      rgba(150, 75, 0, 0.5)),
+  url(https://cdn-images-1.medium.com/max/2600/1*PJ8JmarMkbqdACRkIfvmOA.jpeg);
+  background-position: 0% 50%;
+  background-size: cover;
+  border-bottom: 3px solid #3f1b12;
+}
+
+#ldHeaderText {
+  width: 150px;
+  position: absolute;
+  top: 20px;
+  left: 5px;
+  transform-origin: 0,0;
+  transform: rotate(340deg);
+  color: white;
+}
+
+#villageHeaderText {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+  color: white;
+}
+
+/*AGENDA*/
+.locationButton {
+  height: 150px;
+  width: 85%;
+  background-color: lightgrey;
+  margin: 5px auto;
+  border-radius: 20px;
+  position: relative;
+}
+
+.walkingSection {
+  height: 50px;
+  width: 100%;
+}
+
+.mapButton {
+  display: inline-block;
+  height: 100%;
+  width: 49%;
+  float: left;
+}
+
+.showMapText {
+    display: inline-block;
+    height: 100%;
+    width: 60%;
+    font-size: 0.75rem;
+    vertical-align: middle;
+    text-align: right;
+    line-height: 45px;
+}
+
+.showMapIcon {
+  display: inline-block;
+  height: 100%;
+  width: 30%;
+  vertical-align: middle;
+}
+
+#mapIcon {
+  height: 45px;
+  padding-left: 5px;
+  padding-top: 3px;
+}
+
+#walkIcon {
+  height: 50px;
+  padding-left: 15px;
+  padding-top: -5px;
+}
+
+.walkingDetails {
+  display: inline-block;
+  height: 100%;
+  width: 51%;
+  float: right;
+  border-left: 5px dashed #714214;
+}
+
+.walkingIcon {
+    display: inline-block;
+    height: 100%;
+    width: 35%;
+    vertical-align: middle;
+}
+
+.walkingText {
+  display: inline-block;
+  height: 100%;
+  width: 50%;
+  vertical-align: middle;
+  font-size: 0.75rem;
+  text-align: left;
+  line-height: 45px;
+}
+
+#locationNum {
+  position: absolute;
+  top: 52px;
+  left: -20px;
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+
+  line-height: 36px;
+  text-align: center;
+}
+
+#locationText {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  top: 65px;
+}
+
+#locationPerson {
+  position: absolute;
+  top: -5px;
+  right: -20px;
+  height: 105%;
+  width: 60px;
+  /*background-color: grey;*/
+}
+
+.PersonIMG {
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  background-color: #F2F2F2;
+  margin: 2px auto;
+  border: 2px solid white;
+}
+
+/*Agenda Details*/
+
+#hotelChelsea {
+  background-image:
+  linear-gradient(170deg,
+        rgba(150, 75, 0, 0.1),
+        rgba(150, 75, 0, 0.5)),
+  url(https://i.pinimg.com/originals/4c/23/26/4c2326bc78f4a1d0f5096bb171c3fb6c.jpg);
+  background-position: 0% 20%;
+  background-size: cover;
+}
+
+#washingtonSquarePark {
+  background-image:
+  linear-gradient(170deg,
+        rgba(150, 75, 0, 0.1),
+        rgba(150, 75, 0, 0.5)),
+  url(https://cdn-images-1.medium.com/max/727/0*LtNLPuf-miTjJqm0.jpg);
+  background-position: 0% 20%;
+  background-size: cover;
+}
+
+#Gerdes {
+  background-image:
+  linear-gradient(170deg,
+    rgba(150, 75, 0, 0.1),
+    rgba(150, 75, 0, 0.5)),
+  url(https://gvshp.org/blog/wp-content/uploads/2018/03/Gerdes-Folk-City.jpg);
+  background-position: 0% 0%;
+  background-size: cover;
+}
+
+#Bleecker {
+  background-image:
+  linear-gradient(170deg,
+    rgba(150, 75, 0, 0.1),
+    rgba(150, 75, 0, 0.5)),
+  url(http://www.popspotsnyc.com/dave_van_ronk/Dylan_Group_Hudson_800.jpg);
+  background-position: 0% 30%;
+  background-size: cover;
+}
+
+#Macdougal {
+  background-image:
+  linear-gradient(170deg,
+    rgba(150, 75, 0, 0.1),
+    rgba(150, 75, 0, 0.5)),
+  url(https://i.pinimg.com/originals/7d/20/0b/7d200b2d8fc53c60cf860a36ed721dfa.jpg);
+  background-position: 10% 30%;
+  background-size: cover;
+}
+
+#cafeWha {
+  background-image:
+  linear-gradient(170deg,
+    rgba(150, 75, 0, 0.1),
+    rgba(150, 75, 0, 0.5)),
+  url(https://mediahistorynyrathgaber.files.wordpress.com/2012/11/cafe-wha-2.png);
+  background-position: 0% 30%;
+  background-size: cover;
+}
+
+#Jones {
+  background-image:
+  linear-gradient(170deg,
+    rgba(150, 75, 0, 0.1),
+    rgba(150, 75, 0, 0.5)),
+  url(https://www.snapgalleries.com/wp-content/uploads/2016/03/238.jpg);
+  background-position: 0% 30%;
+  background-size: cover;
+}
+
+#warholIMG {
+  background-image:
+  linear-gradient(170deg,
+    rgba(150, 75, 0, 0.1),
+    rgba(150, 75, 0, 0.5)),
+  url(https://sixtiescity.net/Mbeat/warhol3.gif);
+  background-position: 0% 0%;
+  background-size: cover;
+}
+
+#pattiIMG {
+  background-image:
+  linear-gradient(170deg,
+    rgba(150, 75, 0, 0.1),
+    rgba(150, 75, 0, 0.5)),
+  url(https://bluemusemagdotcom.files.wordpress.com/2016/11/smith_1.jpg?w=800);
+  background-position: 0% 0%;
+  background-size: cover;
+}
+
+#millerIMG {
+  background-image:
+  linear-gradient(170deg,
+    rgba(150, 75, 0, 0.1),
+    rgba(150, 75, 0, 0.5)),
+  url(https://www.nosweatshakespeare.com/wp-content/uploads/2016/12/Arthur-Miller.jpg);
+  background-position: 0% 0%;
+  background-size: cover;
+}
+
+#kerouacIMG {
+  background-image:
+  linear-gradient(170deg,
+    rgba(150, 75, 0, 0.1),
+    rgba(150, 75, 0, 0.5)),
+  url(https://www.nypl.org/sites/default/files/jackerouac.jpg);
+  background-position: 40% 0%;
+  background-size: cover;
+}
+
+#ginsbergProfileIMG {
+  background-image:
+  linear-gradient(170deg,
+    rgba(150, 75, 0, 0.1),
+    rgba(150, 75, 0, 0.5)),
+  url(https://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/28/2015/05/290515ginsberg.jpg);
+  background-position: 0% 40%;
+  background-size: 250px;
+}
+
+#dylanIMG {
+  background-image:
+  linear-gradient(170deg,
+    rgba(150, 75, 0, 0.1),
+    rgba(150, 75, 0, 0.5)),
+  url(https://townsquare.media/site/295/files/2013/03/dylan-Express-Newspapers-Hu.jpg?w=980&q=75);
+  background-position: 50% 10%;
+  background-size: cover;
+}
+
+#baezIMG {
+  background-image:
+  linear-gradient(170deg,
+    rgba(150, 75, 0, 0.1),
+    rgba(150, 75, 0, 0.5)),
+  url(https://timedotcom.files.wordpress.com/2015/05/150507-joan-baez-02.jpg?quality=85);
+  background-position: 90% 30%;
+  background-size: 80px;
+}
+
+#guthrieIMG {
+  background-image:
+  linear-gradient(170deg,
+    rgba(150, 75, 0, 0.1),
+    rgba(150, 75, 0, 0.5)),
+  url(https://upload.wikimedia.org/wikipedia/commons/0/09/Woody_Guthrie_2.jpg);
+  background-position: 40% 0%;
+  background-size: 80px;
+}
+
+#arethaIMG {
+  background-image:
+  linear-gradient(170deg,
+    rgba(150, 75, 0, 0.1),
+    rgba(150, 75, 0, 0.5)),
+  url(https://1.bp.blogspot.com/-SRnMZC107Pk/W3WtYTvlIII/AAAAAAADQxY/NCXPQDUlrAsEJmcqD-_CE8WX2Wc1POxlwCLcBGAs/s1600/young-aretha-franklin-1.jpg);
+  background-position: 40% 0%;
+  background-size: 80px;
+}
+
+/* CONTENT PAGES */
+#overallContainer {
+  width: 95%;
+  min-height: 450px;
+  border-radius: 20px;
+  margin: 30px auto;
+  padding-bottom: 50px;
+}
+
+.contentHeader {
+  height: 120px;
+  width: 100%;
+  border-top-right-radius: inherit;
+  border-top-left-radius: inherit;
+  position: relative;
+}
+
+.textBlock {
+  padding: 20px;
+  font-size: 0.75rem;
+  line-height: 15px;
+}
+
+.contentNumber {
+  height: 55px;
+  width: 55px;
+  position: absolute;
+  top: -20px;
+  left: 152px;
+  border-radius: 100%;
+  background-color: #F2F2F2;
+  text-align: center;
+  line-height: 50px;
+  font-size: 1.5rem;
+}
+
+.contentTitle {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 30px;
+}
+
+.imgBlock {
+  height: 150px;
+  width: 100%;
+  background-color: #F2F2F2;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.quoteBlock {
+  padding: 20px 30px;
+  font-size: 0.75rem;
+  line-height: 15px;
+  color: grey;
+  text-align: center;
+  font-style: italic;
+}
+
+.audioPlayer {
+  padding-top: 20px;
+  height: 120px;
+  width: 100%;
+}
+
+.backButtonContainer {
+  height: 50px;
+  width: 100%;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  border-top: 2px solid #714214;
+  position: relative;
+
+}
+
+.backButton {
+  height: 65px;
+  width: 65px;
+  position: absolute;
+  top: 10px;
+  left: 145px;
+  border-radius: 100%;
+  background-color: #F2F2F2;
+}
+
+#backButtonIcon {
+  height: 60px;
+  padding-top: 0px;
+  padding-left: 0px;
+}
+
+/* HOTEL CHELSEA CONTENT */
+#chelseaContentHeader {
+  background-image:
+  linear-gradient(170deg,
+    rgba(150, 75, 0, 0.1),
+    rgba(150, 75, 0, 0.5)),
+  url(https://cdn-images-1.medium.com/max/2600/1*4Q3Eww4hZKUwZBmoToYPAw.png);
+  background-position: 0% 30%;
+  background-size: cover;
+}
+
+#hubertIMG {
+  background-image:
+  linear-gradient(170deg,
+    rgba(150, 75, 0, 0.1),
+    rgba(150, 75, 0, 0.5)),
+  url(https://4.bp.blogspot.com/-YbI2cidfwl8/WIdDCWHbLlI/AAAAAAAAhfw/MEbmHhjJD1wqzaItqM4Dmsl86NMj97NoQCLcB/s1600/Gengembre-.jpg);
+  background-position: 0% 40%;
+  background-size: cover;
+}
+
+#bardIMG {
+  background-image:
+  linear-gradient(170deg,
+    rgba(150, 75, 0, 0.1),
+    rgba(150, 75, 0, 0.5)),
+  url(https://robbreportedit.files.wordpress.com/2017/03/stanley-bard-1.jpg?w=1024);
+  background-position: 0% 0%;
+  background-size: cover;
+}
+
+#residentsIMG {
+  background-image:
+  linear-gradient(170deg,
+    rgba(150, 75, 0, 0.1),
+    rgba(150, 75, 0, 0.5)),
+  url(https://data.whicdn.com/images/321817185/original.jpg?t=1541328560);
+  background-position: 20% 40%;
+  background-size: cover;
+}
+
+#sidIMG {
+  background-image:
+  linear-gradient(170deg,
+    rgba(150, 75, 0, 0.1),
+    rgba(150, 75, 0, 0.5)),
+  url(https://i.pinimg.com/originals/58/22/2f/58222f88eba218eab8124f8a67968eba.jpg);
+  background-position: 0% 32%;
+  background-size: cover;
+}
+
+#exteriorChelsIMG {
+  background-image:
+  linear-gradient(170deg,
+    rgba(150, 75, 0, 0.1),
+    rgba(150, 75, 0, 0.5)),
+  url(https://photo1.hotelsclick.com/new-york-ny/95359/wide/chelsea-exterior.76.jpg);
+  background-position: 0% 0%;
+  background-size: cover;
+}
+
+/* WSP CONTENT */
+#washingtonsqparkContentHeader {
+  background-image:
+  linear-gradient(170deg,
+    rgba(150, 75, 0, 0.1),
+    rgba(150, 75, 0, 0.5)),
+  url(https://blogs.lib.unc.edu/sfc/wp-content/uploads/2014/04/20239_pf0082_01_0006.jpeg);
+  background-position: 0% 30%;
+  background-size: cover;
+}
+
+#protestIMG {
+  background-image:
+  linear-gradient(170deg,
+    rgba(150, 75, 0, 0.1),
+    rgba(150, 75, 0, 0.5)),
+  url(https://cdn.newsday.com/polopoly_fs/1.11688593.1461608691!/httpImage/image.jpg_gen/derivatives/display_960/image.jpg);
+  background-position: 0% 40%;
+  background-size: cover;
+}
+
+#ginsbergIMG {
+  background-image:
+  linear-gradient(170deg,
+    rgba(150, 75, 0, 0.1),
+    rgba(150, 75, 0, 0.5)),
+  url(https://s18798.pcdn.co/nycdocumentary/wp-content/uploads/sites/3556/2016/04/13live-ginsberg-tmagArticle-1.jpg);
+  background-position: 20% 50%;
+  background-size: cover;
+}
+
+#dylanBeatIMG {
+  background-image:
+  linear-gradient(170deg,
+    rgba(150, 75, 0, 0.1),
+    rgba(150, 75, 0, 0.5)),
+  url(https://media.newyorker.com/photos/590959d1019dfc3494e9f231/master/w_767,c_limit/dylan-kramer-sm.jpg);
+  background-position: 0% 20%;
+  background-size: cover;
+}
+
+/* GERDES CONTENT */
+#gerdesContentHeader {
+  background-image:
+  linear-gradient(170deg,
+    rgba(150, 75, 0, 0.1),
+    rgba(150, 75, 0, 0.5)),
+  url(https://gvshp.org/blog/wp-content/uploads/2017/04/gerdes.jpg);
+  background-position: 0% 90%;
+  background-size: cover;
+}
+
+#playbillIMG {
+  background-image:
+  url(https://gvshp.org/blog/wp-content/uploads/2018/03/Gerdes-poster.jpg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#bazeIMG {
+  background-image:
+  linear-gradient(170deg,
+    rgba(150, 75, 0, 0.1),
+    rgba(150, 75, 0, 0.5)),
+  url(https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Joan_Baez_Bob_Dylan.jpg/1024px-Joan_Baez_Bob_Dylan.jpg);
+  background-position: 0% 20%;
+  background-size: cover;
+}
+
+#dylanCouchIMG {
+  background-image:
+  linear-gradient(170deg,
+    rgba(150, 75, 0, 0.1),
+    rgba(150, 75, 0, 0.5)),
+  url(https://thumbs-prod.si-cdn.com/20qOH2bfsOxR7dgpFNiJBIxTHrQ=/fit-in/1072x0/https://public-media.si-cdn.com/filer/Bob-Dylan-New-York-1961-3.jpg);
+  background-position: 0% 20%;
+  background-size: cover;
+}
+
+/* BLEECKER CONTENT */
+#bleeckerContentHeader {
+  background-image:
+  linear-gradient(170deg,
+    rgba(150, 75, 0, 0.1),
+    rgba(150, 75, 0, 0.5)),
+  url(https://villagevoice.freetls.fastly.net/wp-content/uploads/2016/10/1216dylan.jpg);
+  background-position: 0% 50%;
+  background-size: cover;
+}
+
+#rotoloIMG {
+  background-image:
+  url(http://www.popspotsnyc.com/gerdes_folk_city/jam.jpg);
+  background-position: 0% 0%;
+  background-size: contain;
+}
+
+#dylanBitterEndIMG {
+  background-image:
+  linear-gradient(170deg,
+    rgba(150, 75, 0, 0.1),
+    rgba(150, 75, 0, 0.5)),
+  url(http://www.museyon.com/wp-content/uploads/2010/05/dlyan.jpg);
+  background-position: 0% 20%;
+  background-size: cover;
+}
+
+#youngDylanIMG {
+  background-image:
+  linear-gradient(170deg,
+    rgba(150, 75, 0, 0.1),
+    rgba(150, 75, 0, 0.5)),
+  url(https://www.rollingstone.com/wp-content/uploads/2018/09/bob-dylan-coffee-shop.jpg?crop=900:600&width=440);
+  background-position: 0% 20%;
+  background-size: cover;
+}
+
+#macdougalContentHeader {
+  background-image:
+  linear-gradient(170deg,
+    rgba(150, 75, 0, 0.1),
+    rgba(150, 75, 0, 0.5)),
+  url(http://www.popspotsnyc.com/dave_van_ronk/VanRonk_7th_Ave.jpg);
+  background-position: 0% 35%;
+  background-size: cover;
+}
+
+#dylanSeatIMG {
+  background-image:
+  linear-gradient(170deg,
+    rgba(150, 75, 0, 0.1),
+    rgba(150, 75, 0, 0.5)),
+  url(https://www.wmuk.org/sites/wmuk/files/styles/medium/public/201407/E010-9_Dylan.png);
+  background-position: 0% 35%;
+  background-size: cover;
+}
+
+#fbpExtIMG {
+  background-image:
+  linear-gradient(170deg,
+    rgba(150, 75, 0, 0.1),
+    rgba(150, 75, 0, 0.5)),
+  url(http://4.bp.blogspot.com/-UVi4uWin0OU/TeU9l17BqPI/AAAAAAAANEY/BbnbXXJn6eI/s1600/fatbla%257E1.jpg);
+  background-position: 0% 0%;
+  background-size: cover;
+}
+
+#ppmMarchIMG {
+  background-image:
+  linear-gradient(170deg,
+    rgba(150, 75, 0, 0.1),
+    rgba(150, 75, 0, 0.5)),
+  url(https://www.nextavenue.org/wp-content/uploads/2015/08/music_1963-750x485.png);
+  background-position: 0% 0%;
+  background-size: cover;
+}
+
+#gasIntIMG {
+  background-image:
+  linear-gradient(170deg,
+    rgba(150, 75, 0, 0.1),
+    rgba(150, 75, 0, 0.5)),
+  url(https://www.needsomefun.net/wp-content/uploads/2018/01/Image699.jpg);
+  background-position: 0% 45%;
+  background-size: cover;
+}
+
+#gasPersIMG {
+  background-image:
+  linear-gradient(170deg,
+    rgba(150, 75, 0, 0.1),
+    rgba(150, 75, 0, 0.5)),
+  url(https://media.gettyimages.com/photos/beatnik-woman-stands-in-front-of-the-entrance-to-the-gaslight-cafe-a-picture-id514689726);
+  background-position: 0% 30%;
+  background-size: cover;
+}
+
+#gasExtIMG {
+  background-image:
+  linear-gradient(170deg,
+    rgba(150, 75, 0, 0.1),
+    rgba(150, 75, 0, 0.5)),
+  url(https://i.pinimg.com/originals/94/75/6d/94756dca24e3321bd1c860a452c4463f.jpg);
+  background-position: 0% 35%;
+  background-size: cover;
+}
+
+#cafewhaContentHeader {
+  background-image:
+  linear-gradient(170deg,
+    rgba(150, 75, 0, 0.1),
+    rgba(150, 75, 0, 0.5)),
+  url(http://www.boweryboyshistory.com/wp-content/uploads/2009/08/CafeWHa.jpg);
+  background-position: 0% 45%;
+  background-size: cover;
+}
+
+#dylanHarmIMG {
+  background-image:
+  linear-gradient(170deg,
+    rgba(150, 75, 0, 0.1),
+    rgba(150, 75, 0, 0.5)),
+  url(http://www.boweryboyshistory.com/wp-content/uploads/2009/08/whadylan-300x265.jpg);
+  background-position: 0% 0%;
+  background-size: cover;
+}
+
+#hendrixYoungIMG {
+  background-image:
+  linear-gradient(170deg,
+    rgba(150, 75, 0, 0.1),
+    rgba(150, 75, 0, 0.5)),
+  url(http://3.bp.blogspot.com/-31XpkOCMZkE/U94u2vNq0xI/AAAAAAAAJn0/50CroBnpnHs/s1600/a+Jimii+Hendrix,+1967.jpg);
+  background-position: 0% 0%;
+  background-size: cover;
+}
+
+#hendrixLaterIMG {
+  background-image:
+  linear-gradient(170deg,
+    rgba(150, 75, 0, 0.1),
+    rgba(150, 75, 0, 0.5)),
+  url(https://jazzinphoto.files.wordpress.com/2011/09/jimi-hendrix-on-bass-johnny-winter-on-guitar-and-buddy-miles-on-drums-feb-of-_69-at-the-scene-e28094-c2a9-bill-nitopi.jpg);
+  background-position: 0% 50%;
+  background-size: cover;
+}
+
+#jonesContentHeader {
+  background-image:
+  linear-gradient(170deg,
+    rgba(150, 75, 0, 0.1),
+    rgba(150, 75, 0, 0.5)),
+  url(https://1.bp.blogspot.com/-Y4GFzOuJMjE/XEnegB_HQEI/AAAAAAAADUU/bxEd4Ee0S-cvVW558CUVDQ-Frucwxv6uQCLcBGAs/s1600/outtake%2BFreewheelin%2527%2BBob%2BDylan%2Balbum%2Bcover.jpg);
+  background-position: 0% 50%;
+  background-size: cover;
+}
+
+#dylanRotoloIMG {
+  background-image:
+  linear-gradient(170deg,
+    rgba(150, 75, 0, 0.1),
+    rgba(150, 75, 0, 0.5)),
+  url(https://cmsplatypus.gothamist.com/gothamistgallery/2017/4/18/c1e6f821517-dylan-and-suze-rotolo-jpg-mobile.jpeg);
+  background-position: 0% 60%;
+  background-size: cover;
+}
+
+#dylanRotolo2IMG {
+  background-image:
+  linear-gradient(170deg,
+    rgba(150, 75, 0, 0.1),
+    rgba(150, 75, 0, 0.5)),
+  url(https://i.pinimg.com/originals/48/a8/1e/48a81e851165cea2aa7f1569d53b99b2.jpg);
+  background-position: 0% 20%;
+  background-size: cover;
+}
+
+#freewheelinIMG {
+  background-image:
+  linear-gradient(170deg,
+    rgba(150, 75, 0, 0.1),
+    rgba(150, 75, 0, 0.5)),
+  url(https://www.snapgalleries.com/wp-content/uploads/2016/03/238.jpg);
+  background-position: 0% 30%;
+  background-size: cover;
+}
+
+#dylanBedfordIMG {
+  background-image:
+  linear-gradient(170deg,
+    rgba(150, 75, 0, 0.1),
+    rgba(150, 75, 0, 0.5)),
+  url(https://i.imgur.com/iFBTESb.jpg);
+  background-position: 0% 80%;
+  background-size: cover;
+}
+
+#dylanEndIMG {
+  background-image:
+  linear-gradient(170deg,
+    rgba(150, 75, 0, 0.1),
+    rgba(150, 75, 0, 0.5)),
+  url(https://secure.i.telegraph.co.uk/multimedia/archive/01216/dylan_1216372c.jpg);
+  background-position: 0% 0%;
+  background-size: cover;
+}
+
+#vonronkIMG {
+  background-image:
+  linear-gradient(170deg,
+    rgba(150, 75, 0, 0.1),
+    rgba(150, 75, 0, 0.5)),
+  url(https://villagevoice.freetls.fastly.net/wp-content/uploads/2013/11/9305944.0.jpg);
+  background-position: 0% 0%;
+  background-size: cover;
+}
+
+#youngIMG {
+  background-image:
+  linear-gradient(170deg,
+    rgba(150, 75, 0, 0.1),
+    rgba(150, 75, 0, 0.5)),
+  url(http://andymay.com/wp-content/uploads/Image-Folder-124_03.jpg);
+  background-position: 30% 0%;
+  background-size: cover;
+}
+
+#rotoloIMG {
+  background-image:
+  linear-gradient(170deg,
+    rgba(150, 75, 0, 0.1),
+    rgba(150, 75, 0, 0.5)),
+  url(https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2011/3/1/1298996900697/Suze-Rotolo-and-Bob-Dylan-007.jpg?width=300&quality=85&auto=format&fit=max&s=10cda4b7bb9183c0d892cb9a39428b40);
+  background-position: 0% 0%;
+  background-size: cover;
+}
+
+#maryIMG {
+  background-image:
+  linear-gradient(170deg,
+    rgba(150, 75, 0, 0.1),
+    rgba(150, 75, 0, 0.5)),
+  url(https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2009/9/17/1253176416891/Mary-Travers-001.jpg?width=700&quality=85&auto=format&fit=max&s=a3b11fde02b2bba730df410f8794f63c);
+  background-position: 35% 0%;
+  background-size: cover;
+}
+
+#hendrixIMG {
+  background-image:
+  linear-gradient(170deg,
+    rgba(150, 75, 0, 0.1),
+    rgba(150, 75, 0, 0.5)),
+  url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/jimi-hendrix-1969-1543344884.jpg);
+  background-position: 0% 0%;
+  background-size: cover;
+}

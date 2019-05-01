@@ -1,0 +1,68 @@
+{% extends "baseTemplate.html" %}
+
+{% block content1 %}
+{% load static %}
+<div id=overallContainer class=standardShadow>
+  <div class=contentHeader id=cafewhaContentHeader>
+    <div class="contentNumber boldText brownText brownBorder">6</div>
+    <div class="contentTitle whiteText villageHeader">Cafe Wha?</div>
+  </div>
+  <div class=textBlock>
+    Cafe Wha?, one of the few remaining and still-operating clubs from this era, helped create and then outlived New York’s pre-Vietnam War folk era, providing a stage for performers who would go on to make music history.
+
+    <br><br><div class="brownText boldText headerPadding">Dylan and his harmonica</div>
+    Today, much of the focus of Wha?’s reputation lies with Bob Dylan, who arrived at a Cafe Wha open mic night on his very first day in New York City in January 24, 1961.
+    <br><br>Dylan reportedly played a set of his favorite Guthrie covers and so impressed owner Manny Roth, that he was hired on the spot to play harmonica for one of Roth’s stars Fred Neil, a folkster who regularly played there.
+
+    <div class=imgBlock id="dylanHarmIMG"></div>
+
+    Dylan played as backup for Neil, only playing solo gigs when there was a gap during the day, and always for free.
+    <br><br>“I worked for Manny all afternoons, from twelve to eight,” Dylan wrote. “There was constantly something happening on stage. You never really did get popular there, ’cause people never knew who you were….It was just a nonstop flow of people, usually they were tourists who were looking for beatniks in the Village.”
+
+    <div class=audioPlayer>
+    <iframe src="https://open.spotify.com/embed/track/1X6dRpq3Wi6Jxthi8ZBBBz" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+
+    He actually refers to this time in his 1962 song, Talking New York:
+
+    <div class=quoteBlock id="">
+    "I walked down there and ended up In one of them coffee-houses on the block [...] I got a harmonica job, begun to play blowin’ my lungs out for a dollar a day"
+    </div>
+
+    Dylan's back-up role did not last long, though it wasn't fame that intervened. He was actually fired from the band for being late to three gigs in a row.
+
+    <br><br>Nevertheless, Cafe Wha? was another rich experience for Dylan, surrounding him with a wide variety of other artistic talent.
+
+    <br><br>Mary Travers of Peter, Paul and Mary worked waitress shifts here before starting the band, and met Noel Stookey, who was a regular stand-up comedian at the club before taking the stage name Paul because it sounded better in between the names Peter and Mary.
+
+    <br><br><div class="brownText boldText headerPadding">Home to another prodigious talent</div>
+    But perhaps the most important other Cafe Wha? prodigy was a young African American guitar player named Jimmy James, who auditioned for Roth here in 1966 and was given a three month residency for a band he had scrounged together called the Blue Flames.
+
+    <div class=imgBlock id="hendrixYoungIMG"></div>
+
+    The world would soon be introduced to Jimmy via his new stage name Hendrix, and his band became the Jimi Hendrix Experience.
+
+    <div class=audioPlayer>
+    <iframe src="https://open.spotify.com/embed/track/2aoo2jlRnM3A0NyLQqMN2f" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+
+    But it was here at the Cafe Wha? that Hendrix honed his talents by playing marathon five set evenings, six nights a week.
+    <br><br>It is actaully an old Cafe Wha? legend that even with the front door closed, you could still hear Hendrix's guitar solos ring out along MacDougall Street, all the way up to Washington Square Park.
+
+    <div class=imgBlock id="hendrixLaterIMG"></div>
+
+
+
+
+
+
+  </div>
+
+  <a href="{% url 'agenda' %}">
+  <div class="backButtonContainer">
+    <div class="backButton brownBorder">
+      <img id=backButtonIcon src="{% static 'icons/backBrown.svg' %}">
+    </div>
+  </div></a>
+</div>
+
+
+{% endblock %}

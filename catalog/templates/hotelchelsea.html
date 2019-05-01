@@ -1,0 +1,59 @@
+{% extends "baseTemplate.html" %}
+
+{% block content1 %}
+{% load static %}
+<div id=overallContainer class=standardShadow>
+  <div class=contentHeader id=chelseaContentHeader>
+    <div class="contentNumber boldText brownText brownBorder">1</div>
+    <div class="contentTitle whiteText villageHeader">Hotel Chelsea</div>
+  </div>
+  <div class=textBlock>
+    The Hotel Chelsea is a legendary hotel and commune that has been the home to numerous luminaries including Jackson Pollock, Dylan Thomas, Arthur Miller, Bob Dylan, Andy Warhol, Edie Sedgewick, Robert Mapplethorpe, Patti Smith, and Sid Vicious. <br><br>
+
+    <div class="brownText boldText headerPadding">Socialist beginnings</div>
+    The Chelsea was opened in 1884 originally as a socialist utopian commune by archtiect Philip Hubert, who was inspired by French philsopher, Charles Fourier's vision for self-contained settlements that would meet every professional and personal need of its inhabitants.<br>
+    <div class=imgBlock id="hubertIMG"></div>
+    The stock market crash in 1873 convinced Hubert that New York was ready for his vision and he devised a plan to build a series of these 'cooperative houses' in New York City - precursor to the 'coop' apartments that still exist today.
+    <br><br>None of these was more prominent than the Hotel Chelsea, which at 12 stories was the tallest building in New York.
+    <br><br>In keeping with Fourier's vision, Hubert reserved apartments for the people who built the building: electricians, construction workers, interior designers, and plumbers. And he also surrounded these people with writers and artists. The top floor was given over to 15 artist studios.
+    <br><br>Though initially popular, Hubert's grand experiment went bankrupt in 1905, after which the Chelsea was converted to a luxury hotel and began to cement its place in history.
+    <br><br>
+    <div class="brownText boldText headerPadding">A cultural institution</div>
+    The transformation of the Hotel Chelsea into a cultural landmark began just after WWII, at which point the hotel had fallen into relative disrepair.
+    <div class=imgBlock id="bardIMG"></div>
+    Management of the hotel was assumed by Stanley Bard, a son of one of the original hotel investors. Bard took an unorthodox approach to hotel management, and made himself solely responsble for determining who could stay at the Hotel Chelsea, and how much they paid.
+    <br><br>Bard's willingness to let artists stay for free, and pay for rent with paintings, as well as turn a blind eye to their more eccentric behaviours, enabled him to become what has been described as the curator of the world's greatest 'living museum'.
+    <div class=imgBlock id="residentsIMG"></div>
+    The Chelsea became famous for its incredible cross-pollination of artists, and socialites, writers, actors and models. The halls were roamed at one time or another by some of the most important artistic talents of their generation: Bob Dylan, Andy Warhol, Janis Joplin, Leonard Cohen, Arthur Miller, Jackson Pollock, Dylan Thomas, and Patti Smith.
+    <br><br>As one resident described it:
+    <div class=quoteBlock id="">
+    "It was a vibrant, dynamic place to be, particularly as a young person. You could go to one floor and talk about the theater with Stefan Brecht and go to another floor and talk to Arnold Weinstein about poetry and then have dinner downstairs with Arthur Miller. There aren’t many buildings in New York like that."</div>
+    This was all created by Bard, who used the hotel as a way to support and foster artistic creativity. He would regularly let artists stay at low or no-rent, subsidizing them by charging exorbitant rents to tourists or hyper-rich parents who basically paid him to provide a place to park their troubled children.
+    <br><br>He was famous for his passionate belief in the artistic community in New York, and his appreciation of what's been called the 'bohemian biorhythm' of the time.
+    <br><br>This made it a place of incredible creativity. Bob Dylan wrote "Sara" (about Sara Lownds, whom he married) in room #211; Arthur C. Clarke wrote 2001: A Space Odyssey while a resident.
+    <div class=audioPlayer>
+    <iframe src="https://open.spotify.com/embed/track/4WbP5AjT2RFb3paBBD2BRM" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe></div>
+    But Bard was also infamous for his willingness to turn a blind eye to the more extreme behaviours of his artistic residents.
+    <br><br><div class="brownText boldText headerPadding">A hazardous place</div>
+    Drugs and prostitution were rife, and as a result it could also be place of despair and tragic excess. Suicide at the Chelsea was common. In fact, the smaller rooms used to be called the 'suicide rooms' because they were usually the ones that housed the most struggling artists.
+    <br><br>It could be hazardous in numerous other ways too: Model and actress Edie Sedgewick drunkenly set her bed on fire on night, killing one woman and causing a mass evacuation of the entire building. And Sid Vicious - bassist for the Sex Pistols - brutally murdered his girlfriend/manager duing a drug fueled fight late one night.
+    <br><br>Residents used to say about the Chelsea: every year you can count on one fire, one suicide and a murder.
+    <div class=imgBlock id="sidIMG"></div>
+    This tension between the dark and light sides of this community is captured by Ed Hamilton, who wrote Legends of the Chelsea Hotel:
+    <div class=quoteBlock id="">"I loved it immediately because it was my ideal of bohemian heaven. People left their doors open; they’d invite you in for a glass of wine. It had a vital energy. At the same time, it was a little bit scary because, in addition to the artists and writers, there were all these crazy characters, schizophrenics and junkies and prostitutes. Mine was a single room, so it had no kitchen, and the bathroom, which is shared between four rooms, is next door. I was having a great time, but I'd also get a bit sick of knocking on the bathroom door to get the drug addicts out."</div>
+    Stanley Bird was forced out of the Chelsea in 2007 as new owners took control, and hotel operations ceased in 2011 for the first time in 106 years as renovations began on a $130M development plan to restore the physical building and convert it into a luxury hotel.
+    <div class=imgBlock id="exteriorChelsIMG"></div>
+    The new development is understandably controversial, as The Chelsea represents one of the few remaining direct connections to the true bohemian spirit of Manhattan of the 1960s and 70s.
+
+
+  </div>
+  <a href="{% url 'agenda' %}">
+  <div class="backButtonContainer">
+    <div class="backButton brownBorder">
+      <img id=backButtonIcon src="{% static 'icons/backBrown.svg' %}">
+    </div>
+  </div></a>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,196 @@
+{% extends "baseTemplate.html" %}
+
+{% block content1 %}
+{% load static %}
+
+<div class=twentyPxDiv></div>
+
+<!-- 1. HOTEL CHELSEA -->
+
+<a href="{% url 'hotelchelsea' %}">
+ <div class="locationButton standardShadow" id=hotelChelsea>
+   <div id=locationNum class="standardShadow lightgrey brownText brownBorder boldText">1</div>
+   <div id=locationText class=villageHeader>Hotel Chelsea</div>
+   <div id=locationPerson>
+     <div id="warholIMG" class="PersonIMG standardShadow"></div>
+     <div id="pattiIMG" class="PersonIMG standardShadow"></div>
+     <div id="millerIMG" class="PersonIMG standardShadow"></div>
+   </div>
+ </div></a>
+
+ <div class=walkingSection>
+   <a href="https://www.google.com/maps/d/u/0/edit?hl=en&hl=en&mid=1bvpHoMRDMXRY3qMPub759v1yXmHXb2C9&ll=40.73746411793327%2C-73.99950679713265&z=16" target="_blank">
+   <div class=mapButton>
+     <div class="showMapText boldText brownText">Show map</div>
+     <div class="showMapIcon">
+       <img id=mapIcon src="{% static 'icons/mapBrown.svg' %}">
+     </div>
+  </div></a>
+  <div class=walkingDetails>
+     <div class="walkingIcon boldText brownText">
+       <img id=walkIcon src="{% static 'icons/walkingBrown.svg' %}">
+     </div>
+     <div class="walkingText boldText brownText">21 mins</div>
+  </div>
+ </div>
+
+<!-- 2. WASHINGTON SQUARE PARK -->
+
+<a href="{% url 'washingtonsqpark' %}">
+ <div class="locationButton standardShadow" id=washingtonSquarePark>
+   <div id=locationNum class="standardShadow lightgrey brownText brownBorder boldText">2</div>
+   <div id=locationText class=villageHeader>Washington Sq Park</div>
+   <div id=locationPerson>
+     <div id="kerouacIMG" class="PersonIMG standardShadow"></div>
+     <div id="ginsbergProfileIMG" class="PersonIMG standardShadow"></div>
+     <div id="dylanIMG" class="PersonIMG standardShadow"></div>
+   </div>
+ </div></a>
+
+ <div class=walkingSection>
+   <a href="https://www.google.com/maps/d/u/0/edit?hl=en&hl=en&mid=1bvpHoMRDMXRY3qMPub759v1yXmHXb2C9&ll=40.72967395791186%2C-73.9956847679399&z=19" target="_blank">
+   <div class=mapButton>
+     <div class="showMapText boldText brownText">Show map</div>
+     <div class="showMapIcon">
+       <img id=mapIcon src="{% static 'icons/mapBrown.svg' %}">
+     </div>
+  </div></a>
+   <div class=walkingDetails>
+     <div class="walkingIcon boldText brownText">
+       <img id=walkIcon src="{% static 'icons/walkingBrown.svg' %}">
+     </div>
+     <div class="walkingText boldText brownText">2 mins</div>
+   </div>
+ </div>
+
+
+ <!-- 3. GERDE'S FOLK CITY -->
+ <a href="{% url 'gerdes' %}">
+ <div class="locationButton standardShadow" id=Gerdes>
+      <div id=locationNum class="standardShadow lightgrey brownText brownBorder boldText">3</div>
+   <div id=locationText class=villageHeader>Gerde's Folk City</div>
+   <div id=locationPerson>
+     <div id="dylanIMG" class="PersonIMG standardShadow"></div>
+     <div id="baezIMG" class="PersonIMG standardShadow"></div>
+     <div id="guthrieIMG" class="PersonIMG standardShadow"></div>
+   </div>
+ </div></a>
+
+ <div class=walkingSection>
+   <a href="https://www.google.com/maps/d/u/0/edit?hl=en&hl=en&mid=1bvpHoMRDMXRY3qMPub759v1yXmHXb2C9&ll=40.7283567903901%2C-73.99781175445003&z=18" target="_blank">
+   <div class=mapButton>
+     <div class="showMapText boldText brownText">Show map</div>
+     <div class="showMapIcon">
+       <img id=mapIcon src="{% static 'icons/mapBrown.svg' %}">
+     </div>
+  </div></a>
+   <div class=walkingDetails>
+     <div class="walkingIcon boldText brownText">
+       <img id=walkIcon src="{% static 'icons/walkingBrown.svg' %}">
+     </div>
+     <div class="walkingText boldText brownText">8 mins</div>
+   </div>
+ </div>
+
+ <!-- 4. BLEECKER STREET -->
+
+<a href="{% url 'bleecker' %}">
+ <div class="locationButton standardShadow" id=Bleecker>
+      <div id=locationNum class="standardShadow lightgrey brownText brownBorder boldText">4</div>
+   <div id=locationText class=villageHeader>Bleecker Street</div>
+   <div id=locationPerson>
+     <div id="dylanIMG" class="PersonIMG standardShadow"></div>
+     <div id="pattiIMG" class="PersonIMG standardShadow"></div>
+     <div id="arethaIMG" class="PersonIMG standardShadow"></div>
+   </div>
+ </div></a>
+
+ <div class=walkingSection>
+   <a href="https://www.google.com/maps/d/u/0/edit?hl=en&hl=en&mid=1bvpHoMRDMXRY3qMPub759v1yXmHXb2C9&ll=40.72909260739971%2C-74.0004161741648&z=19" target="_blank">
+   <div class=mapButton>
+     <div class="showMapText boldText brownText">Show map</div>
+     <div class="showMapIcon">
+       <img id=mapIcon src="{% static 'icons/mapBrown.svg' %}">
+     </div>
+  </div></a>
+   <div class=walkingDetails>
+     <div class="walkingIcon boldText brownText">
+       <img id=walkIcon src="{% static 'icons/walkingBrown.svg' %}">
+     </div>
+     <div class="walkingText boldText brownText">2 mins</div>
+   </div>
+ </div>
+
+ <!-- 5. MACDOUGAL STREET -->
+ <a href="{% url 'macdougal' %}">
+ <div class="locationButton standardShadow" id=Macdougal>
+      <div id=locationNum class="standardShadow lightgrey brownText brownBorder boldText">5</div>
+   <div id=locationText class=villageHeader>MacDougal Street</div>
+   <div id=locationPerson>
+     <div id="dylanIMG" class="PersonIMG standardShadow"></div>
+     <div id="vonronkIMG" class="PersonIMG standardShadow"></div>
+     <div id="youngIMG" class="PersonIMG standardShadow"></div>
+   </div>
+ </div></a>
+
+ <div class=walkingSection>
+   <a href="https://www.google.com/maps/d/u/0/edit?hl=en&hl=en&mid=1bvpHoMRDMXRY3qMPub759v1yXmHXb2C9&ll=40.73008091152134%2C-74.00052899789625&z=21" target="_blank">
+   <div class=mapButton>
+     <div class="showMapText boldText brownText">Show map</div>
+     <div class="showMapIcon">
+       <img id=mapIcon src="{% static 'icons/mapBrown.svg' %}">
+     </div>
+  </div></a>
+   <div class=walkingDetails>
+     <div class="walkingIcon boldText brownText">
+       <img id=walkIcon src="{% static 'icons/walkingBrown.svg' %}">
+     </div>
+     <div class="walkingText boldText brownText">0 mins</div>
+   </div>
+ </div>
+
+
+ <!-- 6. CAFE WHA -->
+ <a href="{% url 'cafewha' %}">
+ <div class="locationButton standardShadow" id=cafeWha>
+      <div id=locationNum class="standardShadow lightgrey brownText brownBorder boldText">6</div>
+   <div id=locationText class=villageHeader>Cafe Wha</div>
+   <div id=locationPerson>
+     <div id="dylanIMG" class="PersonIMG standardShadow"></div>
+     <div id="maryIMG" class="PersonIMG standardShadow"></div>
+     <div id="hendrixIMG" class="PersonIMG standardShadow"></div>
+   </div>
+ </div></a>
+
+ <div class=walkingSection>
+   <a href="https://www.google.com/maps/d/u/0/edit?hl=en&hl=en&mid=1bvpHoMRDMXRY3qMPub759v1yXmHXb2C9&ll=40.73146114266284%2C-74.00092049071316&z=18" target="_blank">
+   <div class=mapButton>
+     <div class="showMapText boldText brownText">Show map</div>
+     <div class="showMapIcon">
+       <img id=mapIcon src="{% static 'icons/mapBrown.svg' %}">
+     </div>
+  </div></a>
+   <div class=walkingDetails>
+     <div class="walkingIcon boldText brownText">
+       <img id=walkIcon src="{% static 'icons/walkingBrown.svg' %}">
+     </div>
+     <div class="walkingText boldText brownText">6 mins</div>
+   </div>
+ </div>
+
+ <!-- 7. JONES STREET -->
+ <a href="{% url 'jones' %}">
+ <div class="locationButton standardShadow" id=Jones>
+      <div id=locationNum class="standardShadow lightgrey brownText brownBorder boldText">7</div>
+   <div id=locationText class=villageHeader>Jones Street</div>
+   <div id=locationPerson>
+     <div id="dylanIMG" class="PersonIMG standardShadow"></div>
+     <div id="rotoloIMG" class="PersonIMG standardShadow"></div>
+     <div id="vonronkIMG" class="PersonIMG standardShadow"></div>
+   </div>
+ </div></a>
+
+
+ <div class=twentyPxDiv></div>
+
+{% endblock %}
