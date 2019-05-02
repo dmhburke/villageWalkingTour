@@ -26,7 +26,7 @@ SECRET_KEY = ')oab=+er)8i(0z&tv09w&wm#bv6oj1nkb=e3kw!fd@mm(=a*0f'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['wvwalkingtour.herokuapp.com','127.0.0.1',]
+ALLOWED_HOSTS = [ 'www.villagewalkingtour.com', 'wvwalkingtour.herokuapp.com','127.0.0.1',]
 
 
 # Application definition
