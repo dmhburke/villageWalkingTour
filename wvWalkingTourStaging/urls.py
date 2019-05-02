@@ -26,4 +26,4 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('agenda/', include('catalog.urls')),
     path('', RedirectView.as_view(url='/agenda/', permanent=True)),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+] #+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

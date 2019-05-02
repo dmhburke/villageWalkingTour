@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
+from os import environ as CONFIG
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -38,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'catalog.apps.CatalogConfig',
+    'storages',
 ]
 
 MIDDLEWARE = [
@@ -120,7 +122,32 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
-STATIC_URL = '/static/'
-
+#STATIC_URL = '/static/'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'catalog/static/media')
+
+AWS_LOCATION = 'static'
+AWS_ACCESS_KEY_ID = CONFIG['AWS_ACCESS_KEY_ID']
+AWS_SECRET_ACCESS_KEY = CONFIG['AWS_SECRET_ACCESS_KEY']
+AWS_STORAGE_BUCKET_NAME = CONFIG['AWS_STORAGE_BUCKET_NAME']
+AWS_S3_CUSTOM_DOMAIN='%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
+
+AWS_S3_OBJECT_PARAMETERS = {
+     'CacheControl': 'max-age=86400',
+}
+DEFAULT_FILE_STORAGE = 'wvWalkingTourStaging.storage_backends.MediaStorage'
+STATICFILES_STORAGE = "storages.backends.s3boto3.S3Boto3Storage"
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'catalog/static'),
+]
+STATIC_URL='https://%s/%s/' % (AWS_S3_CUSTOM_DOMAIN, AWS_LOCATION)
+ADMIN_MEDIA_PREFIX = STATIC_URL + 'admin/'
+STATICFILES_FINDERS = (           'django.contrib.staticfiles.finders.FileSystemFinder',    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+)
+AWS_DEFAULT_ACL = None
+AWS_PRELOUD_METADATA=True
+
+# Heroku: Update database configuration from $DATABASE_URL.
+import dj_database_url
+db_from_env = dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(db_from_env)
